@@ -1,8 +1,8 @@
 	# main links
 main:
-  - title: "Programmers 풀이"
+  - title: "Programmers"
     url: /programmers/
-  - title: "백준 풀이"
+  - title: "Baek-Joon"
      url: /baekjoon/
   # - title: "Sample Posts"
   #   url: /year-archive/
