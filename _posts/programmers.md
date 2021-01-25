@@ -1,4 +1,5 @@
 ---
+layout: category
 permalink: /programmers/
 title: "Programmers"
 excerpt: "programmers.md"

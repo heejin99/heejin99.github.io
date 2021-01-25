@@ -1,4 +1,5 @@
 ```
+layout: category
 permalink: /baekjoon/
 title: "Baek-Joon"
 excerpt: "baekjoon.md"
