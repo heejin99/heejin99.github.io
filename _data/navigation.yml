@@ -1,9 +1,9 @@
 # main links
 main:
   - title: "Programmers"
-    url: /programmers/
+    url: /categories/programmers/
   - title: "BaekJoon"
-    url: /baekjoon/
+    url: /categories/baekjoon/
   - title: "Categories"
     url: /categories/
   # - title: "Sample Collections"
