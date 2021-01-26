@@ -4,8 +4,8 @@ main:
     url: /programmers/
   - title: "BaekJoon"
     url: /baekjoon/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Categories"
+    url: /categories/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
