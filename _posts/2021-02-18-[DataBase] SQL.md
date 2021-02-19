@@ -142,17 +142,29 @@ last_modified_at: 2021-02-18T21:09:30-05:00
 
 ***
 
-* **alter table** *r* **add** *A D*
+* **alter table** *r* **add** *A D* : 컬럼 추가
   * A는 관계 r에 추가할 속성의 이름
   * D는 A의 도메인
   * 관계의 모든 튜플에는 새 속성의 값으로 null이 할당됩니다.
   * 예) **alter table** *instructor* **add** monthly_salary numeric(8,2)
-* **alter table** *r* **drop** *A*
+* **alter table** *r* **drop** *A* : 컬럼 삭제
   * A는 관계 r의 속성의 이름
   * 많은 데이터베이스에서 지원하지않는 속성 삭제
   * 예) **alter table** *instructor* **drop** salary
 
-
+* **alter table** *r* **modify** *A* *D* DEFAULT [NOT NULL] : 컬럼 수정
+  * A는 관계 r의 속성의 이름
+  * D는 A의 도메인
+  * DEFAULT : 디폴트 값
+  * NOT NULL : NOT NULL 제약 조건
+* **alter table** *r* **rename column** *A* **To** *N* : 테이블 생성하면서 만들어졌던 컬럼명 변경
+  * A는 변경해야할 컬럼명
+  * N은 새로운 컬럼명
+* **alter table** *r* **add constraint** *A I(컬럼명)* : 생성 이후 제약조건 추가
+  * A는 제약조건명
+  * I는 제약 조건
+* **alter table** *r* **drop constraint** *A* : 테이블 생성 시 부여했던 제약조건 삭제
+  * A는 제약 조건명
 
 ### Drop Table
 
