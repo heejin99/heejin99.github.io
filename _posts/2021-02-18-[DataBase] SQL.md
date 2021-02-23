@@ -87,7 +87,7 @@ last_modified_at: 2021-02-18T21:09:30-05:00
 
   ![char](https://user-images.githubusercontent.com/60311404/108356644-b9226300-722f-11eb-8eb0-c4578d9661f6.png) 
 
-* vchar(10)
+* varchar(10)
 
   ![varchar](https://user-images.githubusercontent.com/60311404/108356654-bc1d5380-722f-11eb-8a2e-6426c57e5339.png) 
 
