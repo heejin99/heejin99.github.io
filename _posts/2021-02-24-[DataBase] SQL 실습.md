@@ -139,13 +139,11 @@ insert into Orders (orderid, custid, bookid, saleprice, orderdate) values
     ('10', '3', '8', 13000, '2013-07-10');
 ```
 
+<img src="https://user-images.githubusercontent.com/60311404/109960943-b4c87080-7d2c-11eb-9d16-447e70be0edf.png" alt="image-20210224131132964" style="zoom:67%;" /> 
 
+<img src="https://user-images.githubusercontent.com/60311404/109961041-d0337b80-7d2c-11eb-91b7-efa79c042445.png" alt="image-20210224131233580" style="zoom:67%;" /> 
 
-<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210224131132964.png" alt="BookData" style="zoom: 67%;" /> 
-
-<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210224131233580.png" alt="OrdersImage" style="zoom: 67%;" /> 
-
-<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210224131330134.png" alt="CustomerData" style="zoom:67%;" /> 
+ <img src="https://user-images.githubusercontent.com/60311404/109961087-dcb7d400-7d2c-11eb-8a03-76958f9d3446.png" alt="image-20210224131330134" style="zoom:67%;" />
 
 
 
@@ -161,7 +159,7 @@ insert into Orders (orderid, custid, bookid, saleprice, orderdate) values
 select bookname, price from Book;
 ```
 
-<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210224131547111.png" alt="selectname,price" style="zoom:67%;" /> 
+<img src="https://user-images.githubusercontent.com/60311404/109961119-e8a39600-7d2c-11eb-8181-07806dc11299.png" alt="image-20210224131547111" style="zoom:67%;" /> 
 
 2. 모든 도서의 도서번호, 도서이름, 출판사, 가격을 검색하시오
 
@@ -169,7 +167,7 @@ select bookname, price from Book;
 select * from Book;
 ```
 
-<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210224131640076.png" alt="selectBook" style="zoom:67%;" /> 
+<img src="https://user-images.githubusercontent.com/60311404/109961132-eb9e8680-7d2c-11eb-98bd-d382d3904219.png" alt="image-20210224131640076" style="zoom:67%;" /> 
 
 3. 도서 테이블에 있는 모든 출판사를 검색하시오
 
@@ -177,7 +175,7 @@ select * from Book;
 select publisher from Book;
 ```
 
-<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210224131717096.png" alt="publisherSelect" style="zoom:67%;" /> 
+<img src="https://user-images.githubusercontent.com/60311404/109961196-0113b080-7d2d-11eb-8f01-b9b5eb8001ae.png" alt="image-20210224131717096" style="zoom:67%;" /> 
 
 4. 가격이 20,000원 미만인 도서를 검색하시오
 
@@ -185,7 +183,7 @@ select publisher from Book;
 select * from Book where price < 20000;
 ```
 
-<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210224131753406.png" alt="BookPrice20000" style="zoom:67%;" /> 
+<img src="https://user-images.githubusercontent.com/60311404/109961211-05d86480-7d2d-11eb-98ee-7619ae40862b.png" alt="image-20210224131753406" style="zoom: 67%;" /> 
 
 5. 가격이 10,000원 이상 20,000 이하인 도서를 검색하시오
 
@@ -193,7 +191,7 @@ select * from Book where price < 20000;
 select * from Book where price >= 10000 and price <= 20000;
 ```
 
-![SelectPrice10,20](C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210224131844043.png)
+<img src="https://user-images.githubusercontent.com/60311404/109961281-1b4d8e80-7d2d-11eb-9a35-c7bf92e973a5.png" alt="image-20210224131844043" style="zoom:67%;" /> 
 
 
 
@@ -207,17 +205,11 @@ select * from Book where price >= 10000 and price <= 20000;
 select * from customer, orders where customer.custid = orders.custid;
 ```
 
-![customer, orders](C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304181355364.png)
+![image-20210304181355364](https://user-images.githubusercontent.com/60311404/109961818-ca8a6580-7d2d-11eb-962a-f00bd8a35588.png)
 
 7. 고객의 이름과 고객이 주문한 도서의 가격을 검색하시오.
 
-```sql
-select name, saleprice 
-from customer, orders 
-where customer.custid = orders.custid;
-```
-
-<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304181525427.png" alt="name,saleprice" style="zoom:80%;" /> 
+   <img src="https://user-images.githubusercontent.com/60311404/109961827-ccecbf80-7d2d-11eb-9019-ce8562fe1bf2.png" alt="image-20210304181525427" style="zoom: 80%;" /> 
 
 8. 고객의 이름과 고객이 주문한 도서의 이름을 구하시오.
 
@@ -227,7 +219,7 @@ from customer, book, orders
 where customer.custid = orders.custid and orders.bookid = book.bookid;
 ```
 
-<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304181717572.png" alt="customer, bookname" style="zoom:80%;" />  
+<img src="https://user-images.githubusercontent.com/60311404/109961835-ceb68300-7d2d-11eb-9df1-7d8662ade9b7.png" alt="image-20210304181717572" style="zoom:80%;" />  
 
 9. 가격이 20,000원인 도서를 주문한 고객의 이름과 도서의 이름을 구하시오.
 
@@ -239,7 +231,7 @@ where customer.custid = orders.custid
 	and book.saleprice = 20000;
 ```
 
-<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304181916680.png" alt="saleprice=20000" style="zoom:80%;" /> 
+<img src="https://user-images.githubusercontent.com/60311404/109961843-d0804680-7d2d-11eb-8f60-956140ad4c35.png" alt="image-20210304181916680" style="zoom:80%;" /> 
 
 
 
@@ -255,7 +247,7 @@ where customer.custid = orders.custid
 order by customer.custid;
 ```
 
-![custid](C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304203643558.png) 
+![image-20210304203643558](https://user-images.githubusercontent.com/60311404/109962157-3371dd80-7d2e-11eb-9bce-8b8100dfc4ac.png)  
 
 11. 도서이름에 '축구'가 포함된 출판사를 검색하시오.
 
@@ -264,7 +256,7 @@ select bookname, publisher from book
 where bookname like '%축구%';
 ```
 
-<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304204153137.png" alt="'축구'like" style="zoom:80%;" /> 
+<img src="https://user-images.githubusercontent.com/60311404/109962165-35d43780-7d2e-11eb-9eba-6cd1d6eeba19.png" alt="image-20210304204153137" style="zoom:80%;" /> 
 
 12. 도서이름 왼쪽 두 번째 위치에 ‘구’라는 문자열을 갖는 도서를 모두 검색하시오.
 
@@ -273,7 +265,7 @@ select * from book
 where bookname like '_구%';
 ```
 
-<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304204418257.png" alt="'_구'" style="zoom:80%;" /> 
+<img src="https://user-images.githubusercontent.com/60311404/109962172-379dfb00-7d2e-11eb-9be9-8339ab624b19.png" alt="image-20210304204418257" style="zoom:80%;" /> 
 
 13. 출판사가 '굿스포츠' 혹은 '대한미디어'인 도서를 검색하시오.
 
@@ -282,7 +274,7 @@ select * from book
 where publisher='굿스포츠' or publisher = '대한미디어';
 ```
 
-<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304204816579.png" alt="or" style="zoom:80%;" /> 
+<img src="https://user-images.githubusercontent.com/60311404/109962175-38cf2800-7d2e-11eb-95eb-6b560cf89e4f.png" alt="image-20210304204816579" style="zoom:80%;" />  
 
 14. 도서를 이름순으로 검색하시오.
 
@@ -291,7 +283,7 @@ select * from book
 order by bookname;
 ```
 
-<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304205114702.png" alt="bookname" style="zoom:80%;" /> 
+<img src="https://user-images.githubusercontent.com/60311404/109962180-3a98eb80-7d2e-11eb-949f-edc9d4be3e36.png" alt="image-20210304205114702" style="zoom:80%;" />  
 
 15. 도서를 가격의 내림차순으로 검색하시오. 만약 가격이 같다면 출판사의 오름차순으로 검색한다.
 
@@ -300,7 +292,7 @@ select * from book
 order by price desc, publisher asc;
 ```
 
-<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304205319121.png" alt="desc, asc" style="zoom:80%;" /> 
+<img src="https://user-images.githubusercontent.com/60311404/109962186-3bca1880-7d2e-11eb-9d68-f06c96607d16.png" alt="image-20210304205319121" style="zoom:80%;" /> 
 
 ***
 
