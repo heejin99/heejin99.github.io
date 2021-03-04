@@ -241,5 +241,66 @@ where customer.custid = orders.custid
 
 <img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304181916680.png" alt="saleprice=20000" style="zoom:80%;" /> 
 
+
+
+### 서점 데이터
+
+***
+
+10. 고객과 고객의 주문에 관한 데이터를 고객별로 정렬하여 보이시오.
+
+```sql
+select * from customer, orders
+where customer.custid = orders.custid
+order by customer.custid;
+```
+
+![custid](C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304203643558.png) 
+
+11. 도서이름에 '축구'가 포함된 출판사를 검색하시오.
+
+```sql
+select bookname, publisher from book
+where bookname like '%축구%';
+```
+
+<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304204153137.png" alt="'축구'like" style="zoom:80%;" /> 
+
+12. 도서이름 왼쪽 두 번째 위치에 ‘구’라는 문자열을 갖는 도서를 모두 검색하시오.
+
+```sql
+select * from book
+where bookname like '_구%';
+```
+
+<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304204418257.png" alt="'_구'" style="zoom:80%;" /> 
+
+13. 출판사가 '굿스포츠' 혹은 '대한미디어'인 도서를 검색하시오.
+
+```sql
+select * from book
+where publisher='굿스포츠' or publisher = '대한미디어';
+```
+
+<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304204816579.png" alt="or" style="zoom:80%;" /> 
+
+14. 도서를 이름순으로 검색하시오.
+
+```sql
+select * from book
+order by bookname;
+```
+
+<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304205114702.png" alt="bookname" style="zoom:80%;" /> 
+
+15. 도서를 가격의 내림차순으로 검색하시오. 만약 가격이 같다면 출판사의 오름차순으로 검색한다.
+
+```sql
+select * from book
+order by price desc, publisher asc;
+```
+
+<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304205319121.png" alt="desc, asc" style="zoom:80%;" /> 
+
 ***
 
