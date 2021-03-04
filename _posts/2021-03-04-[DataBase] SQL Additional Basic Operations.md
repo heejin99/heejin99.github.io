@@ -48,7 +48,7 @@ where T.ID = S.ID
 
 * "Finance 부서에서 최소 한명의 instructor보다 salary가 높은 모든 instructor의 이름을 찾으시오"
 
-<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304182600805.png" alt="renameoperaion" style="zoom:80%;" />  <img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304182600805.png" alt="renameoperaion" style="zoom:80%;" /> 
+  <img src="https://user-images.githubusercontent.com/60311404/109962030-10472e00-7d2e-11eb-81e0-3bbf14c78723.png" alt="image-20210304182600805" style="zoom:80%;" />     <img src="https://user-images.githubusercontent.com/60311404/109962030-10472e00-7d2e-11eb-81e0-3bbf14c78723.png" alt="image-20210304182600805" style="zoom:80%;" />
 
 ​						**instructor as T**															**instructor as S**
 
