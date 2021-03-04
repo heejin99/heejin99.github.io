@@ -195,5 +195,51 @@ select * from Book where price >= 10000 and price <= 20000;
 
 ![SelectPrice10,20](C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210224131844043.png)
 
+
+
+### 서점 데이터 (Join)
+
+***
+
+6. 고객과 고객의 주문에 관한 데이터를 모두 보이시오.
+
+```sql
+select * from customer, orders where customer.custid = orders.custid;
+```
+
+![customer, orders](C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304181355364.png)
+
+7. 고객의 이름과 고객이 주문한 도서의 가격을 검색하시오.
+
+```sql
+select name, saleprice 
+from customer, orders 
+where customer.custid = orders.custid;
+```
+
+<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304181525427.png" alt="name,saleprice" style="zoom:80%;" /> 
+
+8. 고객의 이름과 고객이 주문한 도서의 이름을 구하시오.
+
+```sql
+select customer.name, book.bookname 
+from customer, book, orders
+where customer.custid = orders.custid and orders.bookid = book.bookid;
+```
+
+<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304181717572.png" alt="customer, bookname" style="zoom:80%;" />  
+
+9. 가격이 20,000원인 도서를 주문한 고객의 이름과 도서의 이름을 구하시오.
+
+```sql
+select customer.name, book.bookname
+from customer, book, orders
+where customer.custid = orders.custid 
+	and orders.bookid = book.bookid 
+	and book.saleprice = 20000;
+```
+
+<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304181916680.png" alt="saleprice=20000" style="zoom:80%;" /> 
+
 ***
 
