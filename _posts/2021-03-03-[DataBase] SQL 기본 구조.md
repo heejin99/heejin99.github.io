@@ -133,7 +133,7 @@ where dept_name == 'Comp. Sci.' and salary > 70000
   from instructor, teaches
   ```
 
-  * 두 관계로부터 모든 속성을 사용하여 가능한 모든 instructor - teaches 쌍을 생성합니다. ![CartesianImage](C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304000939032.png)   
+  * 두 관계로부터 모든 속성을 사용하여 가능한 모든 instructor - teaches 쌍을 생성합니다.![image-20210304000939032](https://user-images.githubusercontent.com/60311404/109961472-610a5700-7d2d-11eb-91ca-d948e61c52a6.png)   
 
 * Cartesian product는 직접적으로 그다지 유용하지는 않습니다.
 
@@ -154,17 +154,17 @@ from instructor, teaches
 where instructor.ID = teaches.ID /* relation.attribute*/
 ```
 
-<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304001331783.png" alt="Join" style="zoom: 67%;" /> 
+<img src="https://user-images.githubusercontent.com/60311404/109961519-71223680-7d2d-11eb-94d2-9a04ab9f0430.png" alt="image-20210304001331783" style="zoom:67%;" />  
 
-<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304001821387.png" alt="Original" style="zoom:67%;" /> 
+<img src="https://user-images.githubusercontent.com/60311404/109961560-78494480-7d2d-11eb-8228-23edf57dde54.png" alt="image-20210304001805994" style="zoom:67%;" /> 
 
 **Step 1**. **from**절에 나열되어 있는 relations의 Cartesian product를 발생시킵니다.
 
-<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304002017594.png" style="zoom:67%;" /> 
+<img src="https://user-images.githubusercontent.com/60311404/109961716-a6c71f80-7d2d-11eb-9da1-e06c69f7aa5c.png" alt="image-20210304002017594" style="zoom:67%;" /> 
 
 **Step 2**. 1단계의 결과에 **where** 절에 지정된 clause를 적용합니다.
 
-<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304001731150.png" alt="REsult" style="zoom:67%;" /> 
+<img src="https://user-images.githubusercontent.com/60311404/109961536-72ebfa00-7d2d-11eb-9204-a0693542a66b.png" alt="image-20210304001731150" style="zoom:67%;" /> 
 
 **Step 3**. 2단계 결과의 각 튜플에 대해 select 절에 지정된 속성을 출력합니다.
 
@@ -199,7 +199,7 @@ select *
 from instructor natural join teaches
 ```
 
-<img src="C:\Users\wkdgm\AppData\Roaming\Typora\typora-user-images\image-20210304002544026.png" alt="naturalJoin" style="zoom:80%;" />
+<img src="https://user-images.githubusercontent.com/60311404/109961747-b0e91e00-7d2d-11eb-9b22-3b5b54d3ee91.png" alt="image-20210304002544026" style="zoom:80%;" />
 
 ```sql
 select name, course_id
