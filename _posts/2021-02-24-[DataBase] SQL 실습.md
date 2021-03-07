@@ -294,5 +294,69 @@ order by price desc, publisher asc;
 
 <img src="https://user-images.githubusercontent.com/60311404/109962186-3bca1880-7d2e-11eb-9d68-f06c96607d16.png" alt="image-20210304205319121" style="zoom:80%;" /> 
 
+
+
+### 서점 데이터
+
+***
+
+16. 고객이 주문한 도서의 총 판매액을 구하시오.
+
+```sql
+select sum(saleprice) as '총 판매액'
+from orders;
+```
+
+<img src="https://user-images.githubusercontent.com/60311404/110235010-1b3dd080-7f71-11eb-867c-443944aaf7f5.png" alt="image" style="zoom:80%;" /> 
+
+17. 2번 김연아 고객이 주문한 도서의 총 판매액을 구하시오
+
+```sql
+select sum(saleprice) as '총 매출'
+from orders where custid = 2;
+```
+
+<img src="https://user-images.githubusercontent.com/60311404/110235079-78398680-7f71-11eb-89a9-78602ceed2f2.png" alt="image" style="zoom:80%;" /> 
+
+18. 고객이 주문한 도서의 총 판매액, 평균값, 최저가, 최고가를 구하시오.
+
+```sql
+select sum(saleprice) as Total,
+avg(saleprice) as Average,
+min(saleprice) as Minimum,
+max(saleprice) as Maximum
+from orders;
+```
+
+<img src="https://user-images.githubusercontent.com/60311404/110235176-fdbd3680-7f71-11eb-92da-acc6639a1d81.png" alt="image" style="zoom:80%;" /> 
+
+19. 마당서점의 도서 판매 건수를 구하시오.
+
+```sql
+select count(*) as '판매 건수' from orders;
+```
+
+<img src="https://user-images.githubusercontent.com/60311404/110235244-4d9bfd80-7f72-11eb-957e-361afabaf122.png" alt="image" style="zoom:80%;" /> 
+
+20. 고객별로 주문한 도서의 총 슈량과 총 판매액을 구하시오.
+
+```sql
+select custid, count(*) as '도서 수량', sum(saleprice) as '총 액'
+from orders
+group by custid;
+```
+
+<img src="https://user-images.githubusercontent.com/60311404/110235279-889e3100-7f72-11eb-881a-1f548390a057.png" alt="image" style="zoom:80%;" /> 
+
+21. 가격이 8000원 이상인 도서를 구매한 고객에 대하여 고객별 주문 도서의 총 수량을 구하시오. 단, 2권 이상 구매한 고객만 구한다.
+
+```sql
+select custid, count(*) as '도서 수량'
+from orders where saleprice >= 8000
+group by custid having count(*) >= 2;
+```
+
+<img src="https://user-images.githubusercontent.com/60311404/110235388-1548ef00-7f73-11eb-858a-c7be3218650d.png" alt="image" style="zoom:80%;" /> 
+
 ***
 
