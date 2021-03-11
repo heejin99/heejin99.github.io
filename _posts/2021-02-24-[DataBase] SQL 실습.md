@@ -2,6 +2,8 @@
 title: "[DataBase] SQL 실습"
 excerpt: database chapter 3 - 예제
 author_profile: true
+toc: true
+toc_sticky: true
 categories: 
   - database
 tags:
@@ -235,7 +237,7 @@ where customer.custid = orders.custid
 
 
 
-### 서점 데이터
+### 서점 데이터(orderby)
 
 ***
 
@@ -296,7 +298,7 @@ order by price desc, publisher asc;
 
 
 
-### 서점 데이터
+### 서점 데이터(as)
 
 ***
 
