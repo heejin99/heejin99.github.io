@@ -237,7 +237,7 @@ where customer.custid = orders.custid
 
 
 
-### 서점 데이터(orderby)
+### 서점 데이터(Orderby)
 
 ***
 
@@ -298,7 +298,7 @@ order by price desc, publisher asc;
 
 
 
-### 서점 데이터(as)
+### 서점 데이터(As)
 
 ***
 
