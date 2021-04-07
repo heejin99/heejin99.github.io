@@ -1,6 +1,6 @@
 ---
 title: "About"
-layout: about
+description: 소개페이지
 permalink: /about/
 author_profile: true
 ---
