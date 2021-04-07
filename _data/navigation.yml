@@ -1,11 +1,11 @@
 # main links
 main:
-  - title: "Programmers"
-    url: /categories/programmers/
-  - title: "BaekJoon"
-    url: /categories/baekjoon/
-  - title: "Categories"
+  - title: "About"
+    url: /about/
+  - title: "Blog"
     url: /categories/
+  - title: "Portfolio"
+    url: /portfolio/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
