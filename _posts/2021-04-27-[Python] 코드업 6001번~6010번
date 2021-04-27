@@ -1,0 +1,187 @@
+---
+title: "[Python] 코드업 6001번 ~ 6010번"
+excerpt: 코드업 파이썬 기초 100제
+author_profile: true
+toc: true
+toc_sticky: true
+categories: 
+  - codeup
+tags:
+  - coudeup
+  - python
+last_modified_at: 2021-04-27T23:50:30-05:00
+---
+
+
+
+## [Python] 코드업 6001번 ~ 6010번
+
+
+
+### 코드업 파이썬 기초 100제
+
+***
+
+링크: <https://codeup.kr/problemsetsol.php?psid=33>
+
+
+### 6001번
+
+- 문제
+***
+python 언어에서 가장 기본적인 명령이 출력문이다.
+print( )를 이용해 다음 단어를 출력하시오.
+
+Hello
+
+- 코드
+***
+
+```python
+print("Hello")
+```
+
+### 6002번
+
+- 문제
+***
+python 언어에서 가장 기본적인 명령이 출력문이다.
+print( )를 이용해 다음 단어를 출력하시오.
+
+Hello
+
+- 코드
+***
+
+```python
+print("Hello")
+```
+
+### 6003번
+
+- 문제
+***
+python 언어에서 가장 기본적인 명령이 출력문이다.
+print( )를 이용해 다음 단어를 출력하시오.
+
+Hello
+
+- 코드
+***
+
+```python
+print("Hello")
+```
+
+### 6004번
+
+- 문제
+***
+python 언어에서 가장 기본적인 명령이 출력문이다.
+print( )를 이용해 다음 단어를 출력하시오.
+
+Hello
+
+- 코드
+***
+
+```python
+print("Hello")
+```
+
+### 6005번
+
+- 문제
+***
+python 언어에서 가장 기본적인 명령이 출력문이다.
+print( )를 이용해 다음 단어를 출력하시오.
+
+Hello
+
+- 코드
+***
+
+```python
+print("Hello")
+```
+
+### 6006번
+
+- 문제
+***
+python 언어에서 가장 기본적인 명령이 출력문이다.
+print( )를 이용해 다음 단어를 출력하시오.
+
+Hello
+
+- 코드
+***
+
+```python
+print("Hello")
+```
+
+### 6007번
+
+- 문제
+***
+python 언어에서 가장 기본적인 명령이 출력문이다.
+print( )를 이용해 다음 단어를 출력하시오.
+
+Hello
+
+- 코드
+***
+
+```python
+print("Hello")
+```
+
+### 6008번
+
+- 문제
+***
+python 언어에서 가장 기본적인 명령이 출력문이다.
+print( )를 이용해 다음 단어를 출력하시오.
+
+Hello
+
+- 코드
+***
+
+```python
+print("Hello")
+```
+
+### 6009번
+
+- 문제
+***
+python 언어에서 가장 기본적인 명령이 출력문이다.
+print( )를 이용해 다음 단어를 출력하시오.
+
+Hello
+
+- 코드
+***
+
+```python
+print("Hello")
+```
+
+### 6010번
+
+- 문제
+***
+python 언어에서 가장 기본적인 명령이 출력문이다.
+print( )를 이용해 다음 단어를 출력하시오.
+
+Hello
+
+- 코드
+***
+
+```python
+print("Hello")
+```
+
