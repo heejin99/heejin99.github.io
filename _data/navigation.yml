@@ -5,7 +5,7 @@ main:
   - title: "Blog"
     url: /categories/
   - title: "Portfolio"
-    url: /portfolio/
+    url: https://www.notion.so/b95531cce2f7486ca45b14c02af876c4
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
