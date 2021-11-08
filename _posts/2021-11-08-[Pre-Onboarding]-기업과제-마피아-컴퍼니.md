@@ -1,5 +1,5 @@
 ---
-title: "[Pre Onboarding] 기업과제 마피아 컴퍼니"
+title: "[Pre Onboarding] 기업과제 마피아 컴퍼니 TIL"
 excerpt: Mapia TIL
 author_profile: true
 toc: true
